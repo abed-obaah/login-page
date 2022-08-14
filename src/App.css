@@ -1,0 +1,198 @@
+/*  */
+:root{
+  --clr-primary:#000033;
+  --clr-accent:#686a79;
+  --crl-bg:#686a79;
+}
+
+body{
+  background-color: var(--crl-bg);
+}
+  /* h1{
+    font-size: clamp(3rem,1rem +10vw,7rem );
+  } */
+.header{
+  display: flex;
+  justify-content: center;
+  margin: 95px 0 12px 0;
+  align-content: flex-end;
+  border-radius: 20px;
+  
+  
+}
+
+.welcomePage{
+  font-family: 'roboto', sans-serif;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px - 20px,
+  rgba(0, 0, 0, 0.3)0px 30px 60px - 30px;
+  /* border-radius: 12px; */
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  color: aliceblue;
+  padding: 36px 120px 58px 85px;
+  /* width: 36em; */
+  /* background: firebrick; */
+  /* background-image: linear-gradient(to right bottom, #051937,#004d7a,#008793, #a8eb12); */
+  /* background-image: linear-gradient(to left top,#008793, #a8eb12);
+   */
+   /* background: linear-gradient(to right, rgb(172,189,34),rgb(146, 153, 91)); */
+   background: var(--clr-primary);
+}
+
+.form{
+  box-sizing: border-box;
+  width: 260px;
+  margin: 100px auto 0;
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+  padding-bottom: 40px;
+  border-radius: 3px;
+}
+
+.formCompart{
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background: #f8f8ff;
+  padding: 36px 120px 58px 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px - 20px,
+  rgba(0, 0, 0, 0.3)0px 30px 60px - 30px;
+}
+
+/* .welcomePage h1{
+  padding: 121px 0 0 98px;
+  
+} */
+
+.detailsTitle{
+  padding:129px 0 0 12px;
+}
+
+.detailsTitle p{
+  margin: 0 0 0 139px;
+  /* padding: 0 0 0 139px; */
+}
+
+.detailsTitle div{
+  margin: 74px 0 0 0;
+}
+
+.formCompart{
+  padding: 31px 74px;
+}
+
+.formCompart input{
+  font-family: 'roboto', sans-serif;
+  margin: 0 0 12px 0;
+  padding: 9px;
+  width: 21.163rem;
+
+  /* margin: 40px 25px;
+  width: 200px; */
+  display: block;
+  border: none;
+  padding: 10px 0;
+  border-bottom: solid 1px var(--clr-accent);
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, var(--clr-primary) 4%);
+  background-position: -200px 0;
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  color: darken(var(--clr-primary), 20%);
+}
+
+.formCompart input:focus, :valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+/* .formCompart input::-webkit-input-placeholder {
+  color: var(--clr-primary);
+  font-size: 11px;
+  transform: translateY(-20px);
+  visibility: visible !important;
+} */
+.formCompart button{
+  /* padding: 12px;
+  width: 19.563rem; */
+  color: #1d1f33;
+  border-radius: 12px;
+  padding: 14px;
+  width: 22.563rem;
+  border: none;
+  background-color: #cdcdd2;
+}
+
+.formCompart button:hover{
+  color: #cdcdd2;
+  background-color: #363746;
+}
+
+.formCompart div.connect{
+  margin: 24px 0 24px 87px;
+}
+
+.formCompart div.tweetBtn{
+  margin: 12px 0;
+}
+
+@media (max-width : 760px){
+  body{
+    background-color: var(--clr-primary);
+    overflow-x: hidden;
+    height: 0;
+    width: 0;
+  }
+
+  .imageDiv{
+    margin-top: -6em;
+    margin-left: -4em;
+  }
+
+  .welcomePage{
+    position: relative;
+    width: 50%;
+    height: 200px;
+    left: 1em;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .formCompart {
+    position:absolute;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  .detailsTitle h1{
+    display: inline-block;
+    padding: 2rem;
+    margin: -50px auto;
+    font-size: clamp(1rem, 4vw, 5rem);
+    /* font-size: clamp(3rem,1rem +10vw,7rem ); */
+    /* font-size: 3.456rem; */
+    min-width: 100rem;
+  }
+  .detailsTitle p{
+    display: none;
+  }
+
+  .detailsTitle div{
+    display: none;
+  }
+
+  .detailsTitle p{
+    /* padding-top: 1rem; */
+    /* display: inline; */
+    /* max-width: 520px; */
+    margin-left: 3.9em;
+  }
+
+  .header{
+    display: block;
+    width: 100%;
+  }
+}
