@@ -138,8 +138,8 @@ body{
   body{
     background-color: var(--clr-primary);
     overflow-x: hidden;
-    height: 0;
-    width: 0;
+/*     height: 0;
+    width: 0; */
   }
 
   .imageDiv{
@@ -162,7 +162,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 350px;
-    height: 350%;
+/*     height: 350%; */
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
   }
